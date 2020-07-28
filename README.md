@@ -1,6 +1,5 @@
 # Vídeo Playlist Player
-Construido com vanila.js e css puro
-Built with vanilla js and pure css
+Construido com vanila.js e css puro / Built with vanilla js and pure css
 # Como usar / How to use
 * Acesse o arquivo index.html / Access the index.html file
 * Adiciona fontes de vídeo / Add video sources
