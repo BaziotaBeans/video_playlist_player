@@ -1,0 +1,161 @@
+<DOCTYPE html>
+<html lang="pt-ao">
+    <head>
+        <title>Vídeo Playlist Player</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="author" content="Beans">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/93146aa192.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <nav class="navigation-bar">
+            <a href="index.html" class="logo-name"><h1>Vídeo Playlist Player</h1></a>
+            <a href="index.html" class="logo"><h1>VPP</h1></a>
+            <div class="perfil">
+                <div class="prefil-name">
+                    <h2>baziotabeans</h2>
+                    <h2>fabiobaziota@gmail.com</h2>
+                </div>
+                <img src="img/Beans Avatar.jpg" alt="">
+            </div>
+        </nav>
+        <!--Container-->
+        <div class="container">
+            <div class="container-1">
+                <div class="container-video">
+                     
+                    <video controls  controlsList="nodownload nofullscreen noremoteplayback" id="Test_Video">
+                        <!-- <source src="video/Jason Derulo - Breathing (Official Video).mp4" type="video/mp4">
+                        <source src="video/Ariana Grande, The Weeknd - Love Me Harder.mp4" type="video/mp4">
+                        <source src="video/Trey Songz - Chi Chi feat. Chris Brown [Official Music Video].mp4" type="video/mp4">
+                        <source src="video/ILOVEMAKONNEN (FEAT. DRAKE) - TUESDAY.mp4" type="video/mp4">
+                        <source src="video/Tyga - For The Road (Official Music Video) (Explicit) ft. Chris Brown.mp4" type="video/mp4">
+                        <source src="video/Meek Mill - Going Bad feat. Drake (Official Video).mp4" type="video/mp4">
+                        <source src="video/No New Friends (Explicit).mp4" type="video/mp4">
+                        <source src="video/Kodak Black - ZEZE feat. Travis Scott & Offset [Official Music Video].mp4" type="video/mp4">
+                        <source src="video/TRIPPIE REDD ft. 6IX9INE - POLES1469 (official music video).mp4" type="video/mp4">
+                        <source src="video/French Montana - No Stylist ft. Drake (Official Music Video).mp4" type="video/mp4"> -->
+                            
+                    </video>
+                    <div class="controlers">
+                        <div class="controles-btn-group-left">
+                            <button class="step-back"><i class="fas fa-undo-alt controler-icon-back"><span class="ten">10</span></i></button>
+                            <button class="step-forward"><i class="fas fa-redo-alt controler-icon-forward"><span class="ten">10</span></i></button>
+                            <button class="btn-backward"><i class="fas fa-backward"></i></button>
+                            <button class="btn-forward"><i class="fas fa-forward"></i></button>
+                            <div class="velocity-controler">
+                                <div class="velocity-container">
+                                    <h4 class="velocity-title">Velocidade <span class="velocity-current">Normal</span></h4>    
+                                    <span class="velocity-level">
+                                        <label class="container-velocity">
+                                            <input type="radio" name="velocity" value="0.25">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="velocity-level-value">0.25x</label>
+                                    </span>
+                                    <span class="velocity-level">
+                                        <label class="container-velocity">
+                                            <input type="radio" name="velocity" value="0.5">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label>0.5x</label>
+                                    </span>
+                                    <span class="velocity-level">
+                                        <label class="container-velocity">
+                                            <input type="radio" name="velocity" value="0.75">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label>0.75x</label>
+                                    </span>
+                                    <span class="velocity-level">
+                                        <label class="container-velocity">
+                                            <input type="radio" name="velocity" value="1">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label>Normal</label>
+                                    </span>
+                                    <span class="velocity-level">
+                                        <label class="container-velocity">
+                                            <input type="radio" name="velocity" value="1.25">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label>1.25x</label>
+                                    </span>
+                                    <span class="velocity-level">
+                                        <label class="container-velocity">
+                                            <input type="radio" name="velocity" value="1.5">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label>1.5x</label>
+                                    </span>
+                                    <span class="velocity-level">
+                                        <label class="container-velocity">
+                                            <input type="radio" name="velocity" value="1.75">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label>1.75x</label>
+                                    </span>
+                                    <span class="velocity-level">
+                                        <label class="container-velocity">
+                                            <input type="radio" name="velocity" value="2">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label>2x</label>
+                                    </span>
+                                </div>
+                                <button class="btn-velocity">Velocidade</button>
+                            </div>
+                            
+                        </div>
+    
+                    <div class="controles-btn-group-right">
+                        <span class="autoplay">Autoplay</span>
+                        <label class="switch">
+                            <input type="checkbox" class="toggle-switch">
+                            <span class="slider"></span>
+                        </label>
+                        <button class="resize"><span class="resize-icon"></span></button>
+                    </div>
+                        
+    
+                    </div>
+                </div>
+            
+                <div class="container-video-list">
+                    <ul class="video-list">
+                        <!-- <li><span></span> to fix all bug</li>
+                        <li><span></span> Derulo - Breathing</li>
+                        <li><span></span>O que é No Fap?</li>
+                        <li class="active-video-list"><span class="active-circle"></span>O que é Ceticismo?</li>
+                        <li><span></span>Talk To 2v</li> -->
+                        
+                        <!-- <li><span></span>Ted o que é?</li>
+                        <li><span></span>A Lista Negra</li>
+                        <li><span></span>Maquina de Turing</li>
+                        <li><span></span>Talk To 2v</li>
+                        <li><span></span>Ted o que é?</li>
+                        <li><span></span>A Lista Negra</li>
+                        <li><span></span>Maquina de Turing</li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="container-2">
+                <div class="container-desc">
+                    <h1 class="video-title">How to fix all bug</h1>
+                    <h2 class="desc">Descrição</h2>
+                    <hr>
+                    <div class="desc-info">
+                        <img src = "img/message.png" class="img-message">
+                        <p class="video-description">Esse vídeo ainda está sem descrição</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <script src="js/main.js" defer></script>
+    </body>
+</html>
