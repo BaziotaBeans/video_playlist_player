@@ -9,3 +9,5 @@ Add the title and corresponding video information to the playlist object
 * A ordem dos vídeos deve ser  o mesmo que dos títulos / The order of the videos must be the same as the titles
 
 # Divirta-se / Enjoy 😍❤
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/48324076/88727298-4896e600-d127-11ea-9953-57afdb9caba7.gif)
+
